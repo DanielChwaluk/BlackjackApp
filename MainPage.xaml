@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fomrcosniewiem.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Margin="30">
+            <Label
+                Text="Blackjack"
+                HorizontalOptions="Center"
+                FontSize="32"
+                FontAttributes="Bold"
+                />
+            <Label
+                Text=""
+                x:Name="WygranaLbl"
+                HorizontalOptions="Center"
+                FontSize="25"
+                />
+            <HorizontalStackLayout Spacing="50" x:Name="h3Stack" IsVisible="False">
+                <Label
+                    Text="Krupier: "
+                    WidthRequest="100"
+                    />
+                <Label
+                    Text="Karta nr. 1"
+                    x:Name="KrupCard1Lbl"
+                    />
+                <Label
+                    Text="Karta nr. 2"
+                    x:Name="KrupCard2Lbl"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="50"  x:Name="h2Stack" IsVisible="False">
+            <Label
+                    Text="Gracz: "
+                    WidthRequest="100"
+                    />
+            <Label
+                    Text="Karta nr. 1"
+                    x:Name="GraczCard1Lbl"
+                    />
+            <Label
+                    Text="Karta nr. 2"
+                    x:Name="GraczCard2Lbl"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="h1Stack" IsVisible="False">
+                <Button
+                    Text="Double"
+                    WidthRequest="150"
+                    />
+                <Button
+                    Text="Hit"
+                    WidthRequest="150"
+                    />
+                <Button
+                    Text="Stand"
+                    WidthRequest="150"
+                    />
+            </HorizontalStackLayout>
+            <Button
+                Text="Graj"
+                WidthRequest="230"
+                FontSize="30"
+                FontAttributes="Bold"
+                Clicked="OnGrajClicked"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
