@@ -4,6 +4,11 @@ namespace Fomrcosniewiem
 {
     public partial class MainPage : ContentPage
     {
+        public string[,] talia = new string[4,12];
+        //[pik] AS, 2 , 3, 4, 5, 6, 7, 8, 9, 10, walet(10), dama(10), król(10) 
+        //[kier] AS, 2 , 3, 4, 5, 6, 7, 8, 9, 10, walet(10), dama(10), król(10) 
+        //[trelf] AS, 2 , 3, 4, 5, 6, 7, 8, 9, 10, walet(10), dama(10), król(10) 
+        //[karo] AS, 2 , 3, 4, 5, 6, 7, 8, 9, 10, walet(10), dama(10), król(10) 
         private int[] KrupTab = new int[2];
         private int[] GraczTab = new int[15];
         private string kartyGracza = "";
@@ -11,6 +16,18 @@ namespace Fomrcosniewiem
         public MainPage()
         {
             InitializeComponent();
+            GenTalia();
+        }
+        private void GenTalia()
+        {
+            for(int j = 0;j <4; j++)
+            {
+                for(int i = 0; i < 12; i++)
+                {
+
+                }
+            }
+
         }
         private void KrupierLos()
         {

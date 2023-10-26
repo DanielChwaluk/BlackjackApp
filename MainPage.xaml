@@ -62,7 +62,7 @@
             </HorizontalStackLayout>
             <Button
                 Text="Graj"
-                WidthRequest="230"
+                WidthRequest="300"
                 FontSize="30"
                 FontAttributes="Bold"
                 Clicked="OnGrajClicked"
