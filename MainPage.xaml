@@ -36,27 +36,28 @@
                     Text="Gracz: "
                     WidthRequest="100"
                     />
-            <Label
-                    Text="Karta nr. 1"
-                    x:Name="GraczCard1Lbl"
-                    />
-            <Label
-                    Text="Karta nr. 2"
-                    x:Name="GraczCard2Lbl"
+                <Label
+                    Text=""
+                    x:Name="KartyGraczaLbl"
                     />
             </HorizontalStackLayout>
+            <Label
+                Text=""
+                x:Name="TwPktLbl"
+                FontSize="30"
+                />
             <HorizontalStackLayout x:Name="h1Stack" IsVisible="False">
                 <Button
-                    Text="Double"
+                    Text="Pass"
+                    x:Name="PassBtn"
                     WidthRequest="150"
+                    Clicked="OnPassClicked"
                     />
                 <Button
-                    Text="Hit"
+                    Text="Dobierz"
+                    x:Name="DobierzBtn"
                     WidthRequest="150"
-                    />
-                <Button
-                    Text="Stand"
-                    WidthRequest="150"
+                    Clicked="OnDobierzClicked"
                     />
             </HorizontalStackLayout>
             <Button
@@ -65,6 +66,7 @@
                 FontSize="30"
                 FontAttributes="Bold"
                 Clicked="OnGrajClicked"
+                x:Name="GrajBtn"
                 />
         </VerticalStackLayout>
     </ScrollView>
